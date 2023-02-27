@@ -2,17 +2,17 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", )
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6094762122:AAFMjkALs6_fKABW15GsEheB_rqPidRzwrQ")
 APP_ID = int(os.environ.get("APP_ID", "1736204"))
 API_HASH = os.environ.get("API_HASH", "890d40e0f91a4de32dec2965444b2cbe")
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001690361891"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001205507869"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "1058015838"))
 PORT = os.environ.get("PORT", "8080")
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://cinestore:cinestore@cinestore.gxqbify.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "FileStore")
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
-START_MSG = os.environ.get("START_MESSAGE", "<b><i>💐 Hello {first}, \n\n⛵ I'm Just A File-Store Bot Specially Made To Store Files For @HeroFlix</i></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b><i>💐 Hello {first}, \n\n⛵ I'm Just A File-Store Bot Specially Made To Store Telegram Files</i></b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1058015838").split()):
